@@ -9,22 +9,22 @@
 </head>
 
 <body>
-  <main>
-    <section>
-      <h1>Hey there! Log in below.</h1>
+  <section class="flex">
+    <div class="form">
+      <h1 class="form-title">Hey there! Log in below.</h1>
       <!-- TODO: add PHP action -->
       <form action="#" method="POST">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="username" placeholder="Username" class="field">
+        <input type="password" name="password" placeholder="Password" class="field">
         <a href="#">Forgotten password?</a>
-        <input type="submit" value="Submit">
-        <input type="button" value="Cancel">
+        <div class="buttons">
+          <input type="submit" value="Submit" class="">
+          <input type="button" value="Cancel">
+        </div>
       </form>
-    </section>
-    <aside>
-      <!-- TODO: add image -->
-    </aside>
-  </main>
+    </div>
+  </section>
+  <aside class="flex"> </aside>
 </body>
 
 </html>

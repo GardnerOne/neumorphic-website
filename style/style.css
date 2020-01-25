@@ -1,1 +1,119 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+body .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section {
+  width: 50%;
+}
+
+body section .form {
+  text-align: left;
+}
+
+body section .form .form-title {
+  margin-bottom: 35px;
+}
+
+body section .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section .form form input {
+  font-size: 12pt;
+  padding: 10px;
+  margin: 0 0 30px 0;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+body section .form form a {
+  color: #6e0e46;
+}
+
+body section .form form .field {
+  width: 500px;
+  height: 50px;
+}
+
+body section .form form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body section .form form .buttons * {
+  width: 100px;
+  height: 50px;
+  margin: 10px 0 0 30px;
+}
+
+aside {
+  width: 50%;
+  background: url("../assets/bg-art.png") center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 26pt;
+}
+/*# sourceMappingURL=style.css.map */

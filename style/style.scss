@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+$bg-color: #f0f0f0;
+$accent: #6e0e46;
+
+$font-stack: Roboto, sans-serif;
+$form-space: 30px;
+$neo-size-a: -5px -5px 5px;
+$neo-size-b: 5px 5px 5px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
+    background: $bg-color;
+    align-items: stretch;
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    section {
+        width: 50%;
+
+        .form {
+            text-align: left;
+
+            .form-title {
+                margin-bottom: 35px;
+            }
+
+            form {
+                $height: 50px;
+
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                input {
+                    font-size: 12pt;
+                    padding: 10px;
+                    margin: 0 0 $form-space 0;
+                    border: none;
+
+                    // Neomorphism
+                    background-color: $bg-color;
+                    border-radius: 10px;
+                    box-shadow: $neo-size-a rgba(255, 255, 255, 1), $neo-size-b rgba(0, 0, 0, 0.1);
+                }
+
+                a {
+                    color: $accent;
+                }
+
+                .field {
+                    width: 500px;
+                    height: $height;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+
+                    * {
+                        width: 100px;
+                        height: $height;
+                        margin: 10px 0 0 $form-space;
+                    }
+                }
+            }
+        }
+    }
+}
+
+aside {
+    width: 50%;
+
+    background: url("../assets/bg-art.png") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 26pt;
+}
