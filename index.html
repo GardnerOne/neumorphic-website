@@ -13,18 +13,18 @@
     <div class="form">
       <h1 class="form-title">Hey there! Log in below.</h1>
       <!-- TODO: add PHP action -->
-      <form action="#" method="POST">
-        <input type="text" name="username" placeholder="Username" class="field">
-        <input type="password" name="password" placeholder="Password" class="field">
+      <form action="" method="POST">
+        <input type="text" name="username" placeholder="Username" class="field" pattern="[A-Za-z0-9]+" required>
+        <input type="password" name="password" placeholder="Password" class="field" required>
         <a href="#">Forgotten password?</a>
         <div class="buttons">
-          <input type="submit" value="Submit" class="">
-          <input type="button" value="Cancel">
+          <input type="submit" value="Submit">
+          <input type="button" value="Cancel" class="flat">
         </div>
       </form>
     </div>
   </section>
-  <aside class="flex"> </aside>
+  <aside class="flex"></aside>
 </body>
 
 </html>

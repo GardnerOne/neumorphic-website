@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Roboto, sans-serif;
+  color: #333333;
 }
 
 body {
@@ -45,7 +46,7 @@ body .flex {
 }
 
 body section {
-  width: 50%;
+  width: 66%;
 }
 
 body section .form {
@@ -70,13 +71,17 @@ body section .form form {
 
 body section .form form input {
   font-size: 12pt;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0 0 30px 0;
   border: none;
   background-color: #f0f0f0;
+}
+
+body section .form form input:not(.flat) {
   border-radius: 10px;
   -webkit-box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
 }
 
 body section .form form a {
@@ -106,8 +111,15 @@ body section .form form .buttons * {
   margin: 10px 0 0 30px;
 }
 
+.neu {
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px -5px 5px white, 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
 aside {
-  width: 50%;
+  width: 34%;
   background: url("../assets/bg-art.png") center center no-repeat;
   background-size: cover;
   overflow: hidden;
